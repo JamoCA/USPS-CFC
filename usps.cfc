@@ -121,7 +121,7 @@ limitations under the License.
 					<Girth>#arguments.Girth#</Girth></cfif><cfif Len(Trim(arguments.Machinable))>
 					<Machinable>#arguments.Machinable#</Machinable></cfif><cfif Len(Trim(arguments.ReturnLocations))>
 					<ReturnLocations>#arguments.ReturnLocations#</ReturnLocations></cfif><cfif IsDate(arguments.ShipDate)>
-					<ShipDate>#DateFormat(arguments.ShipDate,'DD-mmm-yyyy')#</ShipDate></cfif>
+					<ShipDate>#DateFormat(arguments.ShipDate,'dd-mmm-yyyy')#</ShipDate></cfif>
 				</Package>
 			</RateV4Request>
 		</cfoutput></cfsavecontent>
@@ -162,7 +162,7 @@ limitations under the License.
 					<Height>#arguments.Height#</Height>
 					<Girth>#arguments.Girth#</Girth><cfif Len(Trim(arguments.ReturnLocations))>
 					<ReturnLocations>#arguments.ReturnLocations#</ReturnLocations></cfif><cfif IsDate(arguments.ShipDate)>
-					<ShipDate>#DateFormat(arguments.ShipDate,'DD-mmm-yyyy')#</ShipDate></cfif><cfif Len(arguments.CommercialFlag)>
+					<ShipDate>#DateFormat(arguments.ShipDate,'dd-mmm-yyyy')#</ShipDate></cfif><cfif Len(arguments.CommercialFlag)>
 					<CommercialFlag>#arguments.CommercialFlag#</CommercialFlag></cfif>
 				</Package>
 			</IntlRateV2Request>
